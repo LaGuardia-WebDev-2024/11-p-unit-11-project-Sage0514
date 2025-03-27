@@ -1,17 +1,30 @@
-var snowX = [100, 120, 160, 200];
-var snowY = [50, 70, 40, 20];
+var flowerX = [300, 420, 360, 500];
+var flowerY = [100, 90, 60, 50];
 
 setup = function() {
-   size(600, 450); 
-   background(164, 212, 255);
-  
+   size(900, 800); 
+   background(0,0,0,0);
+   
+  fill(245, 209, 210);
    textSize(40);
-   for(var i = 0; i < snowX.length; i++){
-     text("❆", snowX[i], snowY[i]);
+   for(var i = 0; i < flowerX.length; i++){
+     text("❁", flowerX[i], flowerY[i]);
    }
    
-   fill(255,255,255);
-   rect(-10, 300, 610, 150);
+   draw = function(){
+  drawFlowers();
+ if(mousePressed){
+  flowerX.push(mouseX);
+  flowerY.push(mouseY);
+}
+}
+
+var drawFlowers = function() {
+    for (var i = 0; i < flowerY.length; i++) {
+        text("❁", flowerX[i], flowerY[i]);
+    }
+    var mySpring = ["🏍️", "Sloth", "Platypus", "Sting Ray", "Manatee"];
+};
 
 }
 
