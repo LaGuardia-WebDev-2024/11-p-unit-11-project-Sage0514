@@ -11,24 +11,13 @@ setup = function() {
      text("❁", flowerX[i], flowerY[i]);
    }
    
-   draw = function(){
-  drawFlowers();
- if(mousePressed){
-  flowerX.push(mouseX);
-  flowerY.push(mouseY);
-}
-}
-
-var drawFlowers = function() {
-    for (var i = 0; i < flowerY.length; i++) {
-        text("❁", flowerX[i], flowerY[i]);
-    }
+   
     var mySpring = ["🏍️", "🤸‍♀️", "🪁"];
-textSize(70);
+textSize(80);
 text(mySpring[0], 500, 740);
-textSize(40);
+textSize(50);
 text(mySpring[1], 700, 700);
-textSize(30);
+textSize(40);
 text(mySpring[2], 300, 400);
 
  var mySpring = ["🐇", "🐇", "🐇"];
@@ -40,23 +29,36 @@ textSize(20);
 text(mySpring[2], 820, 750);
 
 var mySpring = ["🦋", "🦋", "🦋"];
-textSize(20);
+textSize(30);
 text(mySpring[0], 700, 340);
-textSize(10);
+textSize(20);
 text(mySpring[1], 650, 380);
-textSize(10);
+textSize(20);
 text(mySpring[2], 670, 350);
 
-var mySpring = ["🦋", "🦋", "🦋"];
+var mySpring = ["🐞", "🐞", "🐞", "🐞"];
 textSize(20);
-text(mySpring[0], 700, 340);
+text(mySpring[0], 100, 340);
 textSize(10);
-text(mySpring[1], 650, 380);
+text(mySpring[1], 50, 380);
 textSize(10);
-text(mySpring[2], 670, 350);
+text(mySpring[2], 75, 210);
+textSize(10);
+text(mySpring[3], 35, 280);
 
 };
 
+
+ draw = function(){
+  drawFlowers();
+ if(mousePressed){
+  flowerX.push(mouseX);
+  flowerY.push(mouseY);
 }
-
-
+}
+var drawFlowers = function() {
+ textSize(40);
+ for (var i = 0; i < flowerY.length; i++) {
+        text("❁", flowerX[i], flowerY[i]);
+    }
+    }

@@ -14,8 +14,9 @@ html{
 }
 
 #myCanvas {
-  border: 1px solid black;
+  border: 5px solid green;
   background-image: url('https://static.vecteezy.com/system/resources/previews/009/880/319/non_2x/spring-landscape-green-field-with-cherry-blossom-frame-cartoon-summer-scene-with-bird-on-white-sakura-branches-and-daisy-field-cute-banner-for-hello-spring-or-easter-background-vector.jpg');
+  border-radius: 30px;
 }
 
 .container{
@@ -25,6 +26,7 @@ html{
   justify-content: space-around;
   align-items: flex-start;
   padding-bottom: 20px;
+  border-radius: 30px;
 }
  
 
